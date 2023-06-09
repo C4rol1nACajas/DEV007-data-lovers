@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pokecards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="encabezado">
+        <div class="encabezadoIzquierda">
+          <img
+            src="./imgpokemon/encabezado2Pokecards.png"
+            class="logoEncabezado"
+            />
+        </div>
+        <div class="encabezadoDerecha">
+          <select
+            id="ordenamiento"
+            class="selectorOrdenamiento"
+            name="ordenamiento"
+          >
+            <option value="A-Z">Ascendente</option>
+            <option value="Z-A">Descendente</option>
+          </select>
+          <select
+            id="seleccionar-tipo"
+            class="selectorFiltrado"
+            name="transporte"
+          >
+            <option value="All">Filtrar por tipo</option>
+            <option value="Bug">INSECTO</option>
+            <option value="Dark">OSCURO</option>
+            <option value="Dragon">DRAGON</option>
+            <option value="Electric">ELECTRICO</option>
+            <option value="Fairy">HADA</option>
+            <option value="Fighting">LUCHA</option>
+            <option value="Fire">FUEGO</option>
+            <option value="Flying">VOLADOR</option>
+            <option value="Ghost">FANTASMA</option>
+            <option value="Grass">HIERBA</option>
+            <option value="Ice">HIELO</option>
+            <option value="Normal">NORMAL</option>
+            <option value="Poison">VENENO</option>
+            <option value="Psychic">PSIQUICO</option>
+            <option value="Rock">ROCA</option>
+            <option value="Water">AGUA</option>
+          </select>
+        </div>
+      </div>
+      <div class="abajo">
+        <div id="Pokemon" class="personajes"></div>
+      </div>
+    </main>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
